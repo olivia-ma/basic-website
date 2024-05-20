@@ -1,0 +1,191 @@
+  :root {
+    --black: #000000;
+    --white: #ffffff;
+    --primary-blue: #003762;
+    --light-blue: #d4dee9;
+    --dark-blue: #1e2b39;
+    --pastel-yellow: #eee1ca;
+  }
+
+  @font-face {
+    font-family: 'Madera';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('./basic-website/fonts/fonnts.com-Madera_Regular.ttf') format('truetype');
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Madera', sans-serif;
+  }
+  
+  header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0rem calc((100vw - 1300px) / 2);
+    background: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 70px;
+    z-index: 1000; 
+    height: 80px; 
+  }
+  
+  .jason {
+    width: 32px;
+    height: 32px;
+    background: url('./cat_front_walk.png') 0 0 no-repeat;
+    margin: 1rem;
+    animation: run 0.8s steps(4) infinite;
+  }
+  
+  @keyframes run {
+    100% {
+      background-position: -128px 0;
+    }
+  }
+  
+  .logo {
+    position: relative;
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .logo:hover {
+    color: var(--primary-blue);
+  }
+  
+  nav a {
+    position: relative;
+    font-weight: 690;
+    font-size: 1rem;
+    text-decoration: none;
+    background: var(--white);
+    color: #000;
+    margin-left: 40px;
+  }
+  
+  nav a:hover {
+    color: var(--primary-blue);
+  }
+  
+  nav a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: var(--primary-blue);
+    color: var(--primary-blue);
+    transition: .3s;
+  }
+  
+  nav a:hover::before {
+    width: 100%;
+    color: var(--primary-blue);
+  }
+  
+  .about-me {
+    background: var(--white);
+    padding-top: 40px; 
+  }
+  
+  .selfie-with-text-container {
+    display:grid;
+    grid-template-columns: repeat(10, 1fr);
+    
+    color: var(--dark-blue);
+    
+    height: 95vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+  }
+
+  .selfie, .text {
+    grid-row: 2/5;
+  }
+  
+  .selfie {
+    grid-column: 2/5;
+    border-radius: 25px;
+  }
+
+  .resume{
+    margin-top: 7px;
+    padding: 14px;
+    align-self:  center;
+    grid-column: 2/-8;
+    grid-row: 4/8;
+    background-color: var(--primary-blue);
+    border-style: solid;
+    border-color: var(--white);
+    border-radius: 12px;
+    text-align: center;
+    font-weight: 500;
+    color: var(--white);
+  }
+
+  .resumedownload{
+    color: var(--white);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 14px;
+  }
+
+  .text {
+    padding: 14px;
+    align-self:  center;
+    grid-column: 4/-2;
+    grid-row: 4/8;
+    background-color: var(--primary-blue);
+    border-style: solid;
+    border-color: var(--white);
+    border-radius: 12px;
+    
+    font-weight: 500;
+    color: var(--white);
+  }
+
+  .text a {
+    color: var(--pastel-yellow); 
+    text-decoration: none; 
+  }
+  
+  .text a:hover {
+    color: var(--light-blue); 
+  }
+
+  .hello-text {
+    font-weight: 600;
+    font-size: 18px;
+    padding-bottom: 14px;
+  }
+
+  .subtext {
+    font-size: 15px;
+    color: var(--light-blue)
+  }
+
+
+
+  .highlight {
+    color: var(--pastel-yellow);
+  }
+  
+  .videos {
+    text-align: center;
+    margin-top: 100px;
+    color: var(--black)
+  }
