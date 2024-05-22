@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Contact Form</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="contactstyle.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 <body>
     <header>
@@ -16,5 +18,39 @@
             <a href="contact.html">CONTACT</a>
         </nav>
     </header>
+
+    <div class="container">
+        <div class="div-title">
+            <h1>Let's get in touch!</h1>
+
+            <div class="subtextc">
+                <p> Feel free to contact me here. 
+                    I look forward to the projects we can work on together! </p>
+                    <br>
+            </div>
+        </div>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="a987a997-3e72-4c25-a36e-20eeaa2f1809">
+            
+            <div class="input-group">
+                <input type="text" name="name" id="name" required>
+                <label for="name">Name </label>
+            </div>
+        
+            <div class="input-group">
+                <input type="email" name="email" id="email" required>
+                <label for="email">Email </label>
+            </div>
+        
+            <div class="input-group">
+                <textarea name="message" id="message" rows="8" required></textarea>
+                <label for="message">Message </label>
+            </div>
+        
+            <button type="submit">Send</button>
+        </form>
+        
+        
+    </div>
 </body>
 </html>

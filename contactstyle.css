@@ -1,0 +1,94 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --primary-blue: #003762;
+    --light-blue: #d4dee9;
+    --dark-blue: #1e2b39;
+    --pastel-yellow: #eee1ca;
+}
+
+@font-face {
+    font-family: 'Madera';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('./basic-website/fonts/fonnts.com-Madera_Regular.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Madera', sans-serif;
+}
+
+body {
+    color: var(--primary-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.container {
+    margin-top: 100px;
+    
+}
+
+.subtextc {
+    padding-top: 8px;
+}
+form {
+    margin-top: 5px;
+    padding: 5px;
+    width: 90%;
+    max-width: 600px;
+}
+
+.input-group {
+    margin-bottom: 30px;
+    position: relative;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid var(--primary-blue);
+    color: var(--primary-blue);
+    background: transparent;
+    font-size: 15px;
+}
+
+label {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: var(--primary-blue);
+    cursor: text;
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    pointer-events: none;
+    transition: 0.2s;
+}
+
+
+button {
+    padding: 10px 0;
+    color: var(--white);
+    outline: none;
+    background: var(--primary-blue);
+    border: 1px solid var(--pastel-yellow);
+    width: 100%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input:focus~label, input:valid~label, textarea:focus~label, textarea:valid~label{
+    top: -33px;
+    font-size: 14px;
+} 
