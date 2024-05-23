@@ -84,7 +84,7 @@
 .story-container {
   width:450px;
   margin: auto;
-  border:5px solid var(--primary-blue);
+  /* border:5px solid var(--primary-blue); */
 
   overflow: hidden;
   position: relative;
