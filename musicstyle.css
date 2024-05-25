@@ -1,0 +1,56 @@
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --primary-blue: #003762;
+    --light-blue: #d4dee9;
+    --dark-blue: #1e2b39;
+    --pastel-yellow: #eee1ca;
+  }
+  
+  @font-face {
+    font-family: 'Madera';
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    src: url('./basic-website/fonts/fonnts.com-Madera_Regular.ttf') format('truetype');
+  }
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Madera', sans-serif;
+  }
+
+  body {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--primary-blue);
+    text-align: center;
+    align-items: center;
+  }
+
+  .box-container {
+    color: var(--dark-blue);
+    background-color: var(--light-blue);
+    padding: 5px;
+    margin: 15px 0;
+    border-radius: 12px;
+    
+    display: inline-block;
+  }
+  .box-container p {
+    margin: 0;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+
+  .videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video {
+    margin-bottom: 20px;
+}
+
