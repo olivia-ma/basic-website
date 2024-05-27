@@ -112,15 +112,37 @@
     padding: 3rem calc((100vw - 1300px) / 2);
   }
 
-  .selfie, .text {
+  .selfie, .newsaid, .bostonhacks, .text {
     grid-row: 2/5;
   }
   
   .selfie {
     grid-column: 2/5;
-    border-radius: 25px;
+    
   }
 
+  /* .newsaid {
+    grid-column: 5/7;
+    margin-left: 30px;
+    margin-top: 60px;
+  }
+  .bostonhacks {
+    grid-column: 7/9;
+    margin-top: 50px;
+    margin-left: 60px;
+  } */
+  .newsaid {
+    grid-column: 6/9;
+    align-items: center;
+    
+  }
+  .bostonhacks {
+    grid-column: 6/9;
+    grid-row: 3/6;
+    padding-bottom: 10px;
+    align-items: center;
+    margin-left: 25px;
+  }
   .resume{
     margin-top: 7px;
     padding: 14px;
@@ -128,9 +150,6 @@
     grid-column: 2/-8;
     grid-row: 4/8;
     background-color: var(--primary-blue);
-    border-style: solid;
-    border-color: var(--white);
-    border-radius: 12px;
     text-align: center;
     font-weight: 500;
     color: var(--white);
@@ -152,7 +171,7 @@
     background-color: var(--primary-blue);
     border-style: solid;
     border-color: var(--white);
-    border-radius: 12px;
+  
     
     font-weight: 500;
     color: var(--white);
